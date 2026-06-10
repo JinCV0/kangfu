@@ -1,4 +1,4 @@
-import mongoose, { Document, Schema } from '../config/database';
+import mongoose, { Document, Schema } from 'mongoose';
 
 export interface ITrainingPlan extends Document {
   userId: string;
