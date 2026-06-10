@@ -28,7 +28,7 @@ app.use('/api/exercises', exerciseRoutes);
 app.use('/api/training-plan', trainingPlanRoutes);
 app.use('/api/assessments', assessmentRoutes);
 
-app.get('/api/health', (req, res) => {
+app.get('/api/health', (req: Request, res: Response) => {
   res.status(200).json({ message: '服务器运行正常', timestamp: new Date().toISOString() });
 });
 
@@ -47,3 +47,4 @@ const startServer = async (): Promise<void> => {
 };
 
 startServer();
+();
