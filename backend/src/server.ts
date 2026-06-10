@@ -15,7 +15,11 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors({
   origin: process.env.NODE_ENV === 'production'
-    ? (process.env.CLIENT_URL ? [process.env.CLIENT_URL] : ['*'])
+    ? [
+        'https://kangfu.1oi0.xyz',
+        'https://kangfu.vercel.app',
+        ...(process.env.CLIENT_URL ? [process.env.CLIENT_URL] : []),
+      ]
     : ['http://localhost:3000', 'http://localhost:5173'],
   credentials: true,
 }));
