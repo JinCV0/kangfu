@@ -1,0 +1,26 @@
+# 根目录 Git忽略配置
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 日志
+logs
+*.log
+
+# 编辑器
+.vscode
+.idea
+.DS_Store
+
+# 依赖
+node_modules
+
+# 构建输出
+/dist
+/dist-ssr
+
+# 临时文件
+*.tmp
+*.swp
